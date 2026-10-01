@@ -1,0 +1,5 @@
+Dataset,Repository,Species,Technology,Downloaded,QC,Included,Notes
+GSE164157,GEO,Human,10x scRNA-seq,Yes,Pending,Yes,5 pulp samples available
+GSE202476,GEO,Human,scRNA-seq,Yes,No,TBD,Raw tar downloaded
+GSE185222,GEO,Human,scRNA-seq,Yes,No,TBD,Raw tar downloaded
+PRJNA946721,SRA,Human,scRNA-seq,No,No,TBD,Pending

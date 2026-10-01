@@ -1,0 +1,22 @@
+# R
+.Rhistory
+.RData
+
+# renv cache
+renv/library/
+
+# GEO raw archives
+data/GSE*/GSE*_RAW.tar
+GSE164157/*.tar
+
+# GEO matrices
+data/GSE*/*.mtx.gz
+data/GSE*/*.tsv.gz
+GSE164157/*.mtx.gz
+GSE164157/*.tsv.gz
+
+# R objects
+*.rds
+
+# Logs
+*.log
