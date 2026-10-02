@@ -1,0 +1,11 @@
+"group","n_cells","pct_WLS_pos","mean_logexpr"
+"Myeloid",832,19.7,0.391
+"Pulp_fibroblast",9568,16.5,0.273
+"Schwann_glia",2300,13.1,0.237
+"Perivascular_MCAM",59,8.5,0.153
+"Candidate_DPSC",2847,7.1,0.117
+"Endothelial",5718,7.1,0.073
+"Epithelial",87,4.6,0.098
+"B_plasma",158,1.9,0.033
+"T_NK",1692,1.1,0.021
+"Erythrocyte",66,0,0

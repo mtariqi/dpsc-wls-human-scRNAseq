@@ -1,0 +1,6 @@
+"comparison","n_donors","WLS_log2FC","WLS_PValue","WLS_FDR_genomewide","WLS_rank","genes_tested","note"
+"Candidate_DPSC vs Pulp_fibroblast",5,-0.949,0.000229,0.00139,2115,12842,""
+"Candidate_DPSC vs Endothelial",5,1.282,3.9e-05,0.000182,2764,12911,""
+"Candidate_DPSC vs Schwann_glia",5,-0.23,0.195,0.32,6674,10951,""
+"Candidate_DPSC vs Myeloid",5,-1.342,2.37e-05,0.000142,1506,9031,""
+"Candidate_DPSC vs All_other_cells",5,-0.139,0.43,0.568,11127,14697,""

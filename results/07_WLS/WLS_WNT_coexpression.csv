@@ -1,0 +1,9 @@
+"group","n","pct_WLS","pct_anyWNT","pct_both","pct_both_expected","obs_over_expected"
+"Myeloid",832,19.7,4.8,1.44,0.95,1.52
+"Pulp_fibroblast",9568,16.5,14.9,2.93,2.46,1.19
+"Schwann_glia",2300,13.1,6.7,1.48,0.88,1.68
+"Perivascular_other",59,8.5,8.5,1.69,0.72,2.35
+"Candidate_DPSC",2847,7.1,6.6,0.84,0.47,1.79
+"Endothelial",5718,7.1,8.1,0.98,0.57,1.72
+"B_plasma",158,1.9,14.6,0.63,0.28,2.25
+"T_NK",1692,1.1,1.3,0,0.01,0

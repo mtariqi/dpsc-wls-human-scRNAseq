@@ -1,0 +1,2 @@
+"model","odds_ratio","CI95_low","CI95_high","p_value"
+"WLS+ ~ candidate DPSC + (1|donor), mesenchymal cells",0.427,0.366,0.498,3.96e-27

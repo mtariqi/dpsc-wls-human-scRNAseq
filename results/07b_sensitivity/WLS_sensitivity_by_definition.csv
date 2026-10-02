@@ -1,0 +1,5 @@
+"definition","cells","pct_of_mesenchyme","n_donors","pctWLS_DPSC_median","pctWLS_other_median","log2FC","PValue","note"
+"A_perivascular_subclusters",2847,22.8,5,11.1,20.6,-0.947,0.000229,""
+"B_top20pct_stem_score",2495,20,5,12.7,20.3,-0.438,0.000788,""
+"C_3plus_stem_markers",1423,11.4,5,18.7,19.1,-0.12,0.379,""
+"D_MCAM_positive",1538,12.3,5,14.8,19.5,-0.473,0.0107,""

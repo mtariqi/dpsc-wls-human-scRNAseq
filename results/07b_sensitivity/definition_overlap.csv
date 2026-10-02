@@ -1,0 +1,5 @@
+"","A_perivascular_subclusters","B_top20pct_stem_score","C_3plus_stem_markers","D_MCAM_positive"
+"A_perivascular_subclusters",1,0.57,0.43,0.79
+"B_top20pct_stem_score",0.5,1,0.75,0.44
+"C_3plus_stem_markers",0.21,0.43,1,0.25
+"D_MCAM_positive",0.43,0.27,0.27,1
