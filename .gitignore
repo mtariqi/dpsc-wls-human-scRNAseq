@@ -20,3 +20,5 @@ GSE164157/*.tsv.gz
 
 # Logs
 *.log
+.~lock.*#
+*.Rhistory
