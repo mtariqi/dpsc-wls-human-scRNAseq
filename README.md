@@ -93,6 +93,9 @@ flowchart TD
 | 3 | Data acquisition | ✅ *(1 of 4 datasets)* |
 | 4 | Single-cell preprocessing | ✅ |
 | 5 | Cell clustering | ✅ |
+| 6 | Doublet removal and Harmony integration | ✅ |
+| 7 | Cell annotation and candidate DPSC identification | ✅ |
+| 8 | Donor-level WLS analysis and sensitivity checks | ✅ |
 | 6 | DPSC annotation | 🟡 next |
 | 7 | WLS expression analysis | ⬜ |
 | 8 | Cross-dataset validation | ⬜ |
