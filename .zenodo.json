@@ -1,0 +1,51 @@
+{
+  "title": "dpsc-wls-human-scRNAseq: WLS (GPR177/Wntless) expression in candidate human dental pulp stem cells",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Islam, Md Tariqul",
+      "affiliation": "The ADA Forsyth Institute"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Hsu, Wei",
+      "affiliation": "The ADA Forsyth Institute",
+      "type": "Supervisor"
+    }
+  ],
+  "description": "<p>Reproducible R pipeline for a donor-aware single-cell RNA-seq analysis of <strong>WLS</strong> (GPR177/Wntless), the cargo receptor required for secretion of Wnt ligands, in human dental pulp.</p><p><strong>Data.</strong> Public dataset GEO GSE164157 (human dental pulp, five donors, 10x Genomics). Raw and processed data are not redistributed; they are downloaded from GEO by the pipeline.</p><p><strong>Workflow.</strong> Quality control (Seurat v5); doublet removal (scDblFinder); donor integration (Harmony); marker-based cell type annotation; identification of candidate dental pulp stem cells (DPSCs) from a stem/progenitor score kept separate from perivascular markers; WLS quantification per donor; donor-paired pseudobulk edgeR quasi-likelihood tests; mixed-effects logistic models (lme4); depth-adjusted WLS/WNT co-expression; and sensitivity analysis across four DPSC definitions. Package versions are locked with renv.</p><p><strong>Contents.</strong> Analysis scripts (scripts/), locked R environment (renv.lock), cluster annotations (data/annotation/), figures and tables for each stage (results/), and documentation (docs/).</p><p><strong>Licensing.</strong> Code is released under the MIT licence (LICENSE). Reports, figures and tables are released under CC BY 4.0 (LICENSE-docs.md).</p>",
+  "keywords": [
+    "single-cell RNA-seq",
+    "scRNA-seq",
+    "dental pulp stem cells",
+    "DPSC",
+    "WLS",
+    "Wntless",
+    "GPR177",
+    "Wnt signaling",
+    "Wnt secretion",
+    "pseudobulk",
+    "Harmony",
+    "Seurat",
+    "edgeR",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164157",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/mtariqi/dpsc-wls-human-scRNAseq",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Analysis performed in the laboratory of Professor Wei Hsu, The ADA Forsyth Institute. Please also cite the original publication associated with GEO GSE164157."
+}

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it using the metadata below, and cite the original GSE164157 dataset."
+title: "dpsc-wls-human-scRNAseq: WLS (GPR177/Wntless) expression in candidate human dental pulp stem cells"
+type: software
+authors:
+  - family-names: Islam
+    given-names: Md Tariqul
+    affiliation: The ADA Forsyth Institute
+version: 1.0.0
+date-released: "2026-10-02"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/mtariqi/dpsc-wls-human-scRNAseq"
+abstract: >-
+  Reproducible R pipeline for a donor-aware single-cell RNA-seq analysis of
+  WLS (GPR177/Wntless), the cargo receptor required for Wnt ligand secretion,
+  in human dental pulp (GEO GSE164157; five donors, 10x Genomics). The
+  workflow covers quality control, scDblFinder doublet removal, Harmony
+  integration, marker-based cell type annotation, identification of candidate
+  dental pulp stem cells, donor-paired pseudobulk edgeR tests, mixed-effects
+  models and sensitivity analyses. Code is released under the MIT licence;
+  reports, figures and tables under CC BY 4.0.
+keywords:
+  - single-cell RNA-seq
+  - scRNA-seq
+  - dental pulp stem cells
+  - DPSC
+  - WLS
+  - Wntless
+  - GPR177
+  - Wnt signaling
+  - Wnt secretion
+  - pseudobulk
+  - Harmony
+  - Seurat
+  - edgeR
+  - reproducible research
+references:
+  - type: dataset
+    title: "Single-cell RNA-seq of human dental pulp (GSE164157)"
+    url: "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE164157"
+    authors:
+      - name: "Original GSE164157 submitters (see GEO record)"
+    repository: "Gene Expression Omnibus"
