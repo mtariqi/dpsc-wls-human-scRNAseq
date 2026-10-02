@@ -241,8 +241,10 @@ dpsc-wls-human-scRNAseq/
 │   ├── 03_download_SRA.sh       📝
 │   ├── 04_QC.R                  ✅
 │   ├── 05_clustering.R          ✅
-│   ├── 06_annotation.R          ⬜
-│   ├── 07_WLS_expression.R      ⬜
+│   ├── 06a_batch_doublets.R     ✅
+│   ├── 06_annotation.R          ✅
+│   ├── 07_WLS_expression.R      ✅
+│   ├── 07b_WLS_sensitivity.R    ✅
 │   ├── 08_DEG.R                 ⬜
 │   └── 09_GSEA.R                ⬜
 ├── renv.lock
@@ -310,10 +312,11 @@ flowchart LR
 - [x] Dataset discovery and GEO download (GSE164157)
 - [x] Load, merge, and QC five pulp samples
 - [x] PCA, UMAP, and Louvain clustering (28 clusters)
-- [ ] Batch inspection, integration, and doublet removal
-- [ ] Cell type annotation and candidate DPSC identification
-- [ ] WLS visualization and quantification
-- [ ] Donor-level WLS enrichment testing
+- [x] Batch inspection, integration, and doublet removal
+- [x] Cell type annotation and candidate DPSC identification
+- [x] WLS visualization and quantification
+- [x] Donor-level WLS enrichment testing
+- [x] Sensitivity analysis (4 DPSC definitions, depth-adjusted co-expression)
 - [ ] WLS⁺ vs WLS⁻ DEG, GSEA, and ligand–receptor analysis
 - [ ] Cross-dataset validation
 - [ ] Publication-quality figures
