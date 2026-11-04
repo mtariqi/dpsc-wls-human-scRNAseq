@@ -7,7 +7,7 @@
 # Last updated: 2026-11-04
 # ------------------------------------------------------------------------------
 # Purpose:      Installs the CRAN and Bioconductor packages used by the
-                pipeline and records exact versions in renv.lock.
+#               pipeline and records exact versions in renv.lock.
 # Inputs:       None.
 # Outputs:      renv.lock; project package library (renv/).
 # Usage:        Rscript scripts/00_install_packages.R
@@ -26,13 +26,13 @@ cran_packages <- c(
   "remotes"
 )
 
-for(pkg in cran_packages){
-  if(!require(pkg, character.only = TRUE)){
+for (pkg in cran_packages) {
+  if (!require(pkg, character.only = TRUE)) {
     install.packages(pkg)
   }
 }
 
-if(!requireNamespace("BiocManager")){
+if (!requireNamespace("BiocManager")) {
   install.packages("BiocManager")
 }
 

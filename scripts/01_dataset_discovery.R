@@ -10,10 +10,9 @@
 # Inputs:       See Details below.
 # Outputs:      See Details below.
 # Usage:        Rscript
-                /home/mtariq/dpsc-wls-human-scRNAseq/scripts/01_dataset_discovery.R
+#               /home/mtariq/dpsc-wls-human-scRNAseq/scripts/01_dataset_discovery.R
 # Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
 #               patchwork, dplyr (exact versions in renv.lock)
 # Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
 #               validated by the author.
 # ==============================================================================
-

@@ -7,7 +7,7 @@
 # Last updated: 2026-11-04
 # ------------------------------------------------------------------------------
 # Purpose:      Log-normalises counts, selects variable genes, runs PCA and
-                clusters cells before integration.
+#               clusters cells before integration.
 # Inputs:       data/processed/GSE164157_qc.rds.
 # Outputs:      data/processed/GSE164157_clustered.rds.
 # Usage:        Rscript scripts/05_clustering.R
@@ -50,8 +50,8 @@ obj <- subset(
   obj,
   subset =
     nFeature_RNA > 200 &
-    nCount_RNA > 500 &
-    percent.mt < 20
+      nCount_RNA > 500 &
+      percent.mt < 20
 )
 
 saveRDS(

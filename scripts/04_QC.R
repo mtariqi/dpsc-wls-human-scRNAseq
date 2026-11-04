@@ -7,7 +7,7 @@
 # Last updated: 2026-11-04
 # ------------------------------------------------------------------------------
 # Purpose:      Filters cells with > 200 genes, > 500 UMIs and < 20%
-                mitochondrial reads.
+#               mitochondrial reads.
 # Inputs:       data/processed/GSE164157_raw.rds.
 # Outputs:      data/processed/GSE164157_qc.rds; QC tables and figures.
 # Usage:        Rscript scripts/04_QC.R
@@ -29,8 +29,7 @@ samples <- c(
 
 objs <- list()
 
-for(i in seq_along(samples)){
-
+for (i in seq_along(samples)) {
   prefix <- samples[i]
 
   counts <- ReadMtx(
@@ -43,7 +42,6 @@ for(i in seq_along(samples)){
     counts = counts,
     project = prefix
   )
-
 }
 
 combined <- merge(

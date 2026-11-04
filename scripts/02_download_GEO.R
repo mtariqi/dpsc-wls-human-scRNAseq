@@ -7,7 +7,7 @@
 # Last updated: 2026-11-04
 # ------------------------------------------------------------------------------
 # Purpose:      Downloads the GSE164157 count matrices for five donors with
-                GEOquery.
+#               GEOquery.
 # Inputs:       None.
 # Outputs:      data/raw/GSE164157/.
 # Usage:        Rscript scripts/02_download_GEO.R
