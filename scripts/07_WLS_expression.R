@@ -1,17 +1,33 @@
-# =============================================================================
-# 07_WLS_expression.R
+# ==============================================================================
+# Title:        07_WLS_expression.R - WLS expression by donor and pseudobulk tests
+# Project:      Gpr177/Wntless (WLS) and Wnt/Hedgehog genes in human DPSCs
+# Author:       Md Tariqul Islam
+# Affiliation:  Laboratory of Professor Wei Hsu, The ADA Forsyth Institute,
+#               Somerville, MA, USA
+# Last updated: 2026-11-04
+# ------------------------------------------------------------------------------
+# Purpose:      Measures % WLS-positive cells per donor and group; tests DPSCs
+                against other groups with edgeR quasi-likelihood pseudobulk (~
+                donor + group) and an lme4 mixed model.
+# Inputs:       data/processed/GSE164157_annotated.rds.
+# Outputs:      results/07_WLS/.
+# Usage:        Rscript scripts/07_WLS_expression.R
+# Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
+#               patchwork, dplyr (exact versions in renv.lock)
+# Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
+#               validated by the author.
+# ------------------------------------------------------------------------------
+# Details:
 # Stage 7: WLS (GPR177) expression across cell types and in candidate DPSCs,
 #          with donor-level statistics
 # Project: WLS expression in human dental pulp (GSE164157)
-#
 # Input : data/processed/GSE164157_annotated.rds  (from 06_annotation.R)
 # Output: results/07_WLS/  (figures + tables)
-#
 # Statistics: donors (n = 5), not cells, are the unit of replication.
 #   (1) per-donor % WLS+ and mean expression for every cell group
 #   (2) pseudobulk edgeR QL tests with donor as a blocking factor
 #   (3) mixed-effects logistic model of WLS detection with donor random effect
-# =============================================================================
+# ==============================================================================
 
 IN_RDS  <- "data/processed/GSE164157_annotated.rds"
 OUT_DIR <- "results/07_WLS"

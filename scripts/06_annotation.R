@@ -1,19 +1,37 @@
-# =============================================================================
-# 06_annotation.R
+# ==============================================================================
+# Title:        06_annotation.R - Cell-type annotation and candidate DPSCs
+# Project:      Gpr177/Wntless (WLS) and Wnt/Hedgehog genes in human DPSCs
+# Author:       Md Tariqul Islam
+# Affiliation:  Laboratory of Professor Wei Hsu, The ADA Forsyth Institute,
+#               Somerville, MA, USA
+# Last updated: 2026-11-04
+# ------------------------------------------------------------------------------
+# Purpose:      Labels clusters with marker-panel module scores (confirmed
+                manually), re-clusters the mesenchyme (Harmony dims 1-15,
+                resolution 0.4) and calls candidate DPSCs (stem score > 0).
+# Inputs:       data/processed/GSE164157_integrated.rds;
+                data/annotation/cluster_labels.csv.
+# Outputs:      data/processed/GSE164157_annotated.rds,
+                GSE164157_mesenchyme.rds; results/06_annotation/.
+# Usage:        Rscript scripts/06_annotation.R
+# Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
+#               patchwork, dplyr (exact versions in renv.lock)
+# Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
+#               validated by the author.
+# ------------------------------------------------------------------------------
+# Details:
 # Stage 6b: cell type annotation and candidate DPSC identification
 # Project: WLS (GPR177) expression in human dental pulp (GSE164157)
-#
 # Input : data/processed/GSE164157_integrated.rds   (from 06a_batch_doublets.R)
 # Output: data/processed/GSE164157_annotated.rds
 #         results/06_annotation/  (figures + tables)
-#
 # Annotation is two-pass:
 #   Pass 1 (automatic): marker module scores suggest a label per cluster and
 #          write results/06_annotation/cluster_labels_suggested.csv
 #   Pass 2 (manual):    copy that file to data/annotation/cluster_labels.csv,
 #          check/edit the 'label' column against the DotPlot and marker table,
 #          then rerun this script. Your labels then take priority.
-# =============================================================================
+# ==============================================================================
 
 IN_RDS     <- "data/processed/GSE164157_integrated.rds"
 OUT_RDS    <- "data/processed/GSE164157_annotated.rds"

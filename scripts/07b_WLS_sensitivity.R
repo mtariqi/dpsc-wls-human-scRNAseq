@@ -1,12 +1,30 @@
-# =============================================================================
-# 07b_WLS_sensitivity.R
+# ==============================================================================
+# Title:        07b_WLS_sensitivity.R - Sensitivity analyses for the WLS result
+# Project:      Gpr177/Wntless (WLS) and Wnt/Hedgehog genes in human DPSCs
+# Author:       Md Tariqul Islam
+# Affiliation:  Laboratory of Professor Wei Hsu, The ADA Forsyth Institute,
+#               Somerville, MA, USA
+# Last updated: 2026-11-04
+# ------------------------------------------------------------------------------
+# Purpose:      Repeats the WLS comparison under four DPSC definitions, tests
+                WLS-WNT co-expression with depth adjustment and summarises
+                per-donor QC.
+# Inputs:       data/processed/GSE164157_annotated.rds,
+                GSE164157_mesenchyme.rds.
+# Outputs:      results/07b_sensitivity/.
+# Usage:        Rscript scripts/07b_WLS_sensitivity.R
+# Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
+#               patchwork, dplyr (exact versions in renv.lock)
+# Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
+#               validated by the author.
+# ------------------------------------------------------------------------------
+# Details:
 # Stage 7b: does the WLS result depend on how candidate DPSCs are defined?
 #           + sequencing-depth-adjusted WLS / WNT co-expression
 #           + identification of the low-WLS donor
-#
 # Input : data/processed/GSE164157_annotated.rds
 # Output: results/07b_sensitivity/
-# =============================================================================
+# ==============================================================================
 
 IN_RDS  <- "data/processed/GSE164157_annotated.rds"
 OUT_DIR <- "results/07b_sensitivity"

@@ -1,3 +1,22 @@
+# ==============================================================================
+# Title:        04_QC.R - Quality control of GSE164157
+# Project:      Gpr177/Wntless (WLS) and Wnt/Hedgehog genes in human DPSCs
+# Author:       Md Tariqul Islam
+# Affiliation:  Laboratory of Professor Wei Hsu, The ADA Forsyth Institute,
+#               Somerville, MA, USA
+# Last updated: 2026-11-04
+# ------------------------------------------------------------------------------
+# Purpose:      Filters cells with > 200 genes, > 500 UMIs and < 20%
+                mitochondrial reads.
+# Inputs:       data/processed/GSE164157_raw.rds.
+# Outputs:      data/processed/GSE164157_qc.rds; QC tables and figures.
+# Usage:        Rscript scripts/04_QC.R
+# Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
+#               patchwork, dplyr (exact versions in renv.lock)
+# Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
+#               validated by the author.
+# ==============================================================================
+
 library(Seurat)
 
 samples <- c(

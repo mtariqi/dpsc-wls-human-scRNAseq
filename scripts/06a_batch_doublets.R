@@ -1,14 +1,29 @@
-# =============================================================================
-# 06a_batch_doublets.R
+# ==============================================================================
+# Title:        06a_batch_doublets.R - Doublet removal and Harmony integration
+# Project:      Gpr177/Wntless (WLS) and Wnt/Hedgehog genes in human DPSCs
+# Author:       Md Tariqul Islam
+# Affiliation:  Laboratory of Professor Wei Hsu, The ADA Forsyth Institute,
+#               Somerville, MA, USA
+# Last updated: 2026-11-04
+# ------------------------------------------------------------------------------
+# Purpose:      Removes doublets per donor with scDblFinder and integrates
+                donors with Harmony (20 PCs); clusters at resolution 0.5.
+# Inputs:       data/processed/GSE164157_clustered.rds.
+# Outputs:      data/processed/GSE164157_integrated.rds; results/06a_batch/.
+# Usage:        Rscript scripts/06a_batch_doublets.R
+# Dependencies: R 4.6; Seurat 5, harmony, scDblFinder, edgeR, GEOquery, ggplot2,
+#               patchwork, dplyr (exact versions in renv.lock)
+# Development:  Written with AI assistance (Claude, Anthropic); reviewed, run and
+#               validated by the author.
+# ------------------------------------------------------------------------------
+# Details:
 # Stage 6a: batch inspection, doublet removal and Harmony integration
 # Project: WLS (GPR177) expression in human dental pulp (GSE164157)
-#
 # Input : clustered Seurat object from 05_clustering.R
 # Output: data/processed/GSE164157_integrated.rds
 #         results/06a_batch/  (figures + tables)
-#
 # Run from the repo root:  Rscript scripts/06a_batch_doublets.R
-# =============================================================================
+# ==============================================================================
 
 ## ---- 0. Settings ------------------------------------------------------------
 IN_RDS   <- "data/processed/GSE164157_clustered.rds"
