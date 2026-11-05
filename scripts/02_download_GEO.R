@@ -39,4 +39,8 @@ for(ds in datasets){
 
   }, error=function(e){
 
-    cat("Failed
+    cat("Failed:", ds, "-", conditionMessage(e), "\n")
+  })
+}
+
+cat("\nDone. Downloaded files are in data/raw/\n")
