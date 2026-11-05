@@ -25,22 +25,21 @@ datasets <- c(
   "GSE185222"
 )
 
-for(ds in datasets){
-
+for (ds in datasets) {
   cat("\nDownloading:", ds, "\n")
 
-  tryCatch({
-
-    getGEOSuppFiles(
-      GEO = ds,
-      makeDirectory = TRUE,
-      baseDir = "data/raw"
-    )
-
-  }, error=function(e){
-
-    cat("Failed:", ds, "-", conditionMessage(e), "\n")
-  })
+  tryCatch(
+    {
+      getGEOSuppFiles(
+        GEO = ds,
+        makeDirectory = TRUE,
+        baseDir = "data/raw"
+      )
+    },
+    error = function(e) {
+      cat("Failed:", ds, "-", conditionMessage(e), "\n")
+    }
+  )
 }
 
 cat("\nDone. Downloaded files are in data/raw/\n")
